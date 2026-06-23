@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcours d'achat — Skeepers Client Training</title>
+  <meta name="description" content="Fiche produit de démonstration avec avis vérifiés Skeepers." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="logo-mark"></span> keepers</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="purchase.html" class="active">Parcours d'achat</a></li>
+          <li><a href="help-center.html">Centre d'aide</a></li>
+          <li><a href="cart.html">Panier</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html" class="btn btn-ghost">🛒 Panier</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a> / <a href="#">Soin du visage</a> / <span>Sérum éclat à la vitamine C</span>
+    </div>
+
+    <div class="product">
+      <!-- Galerie -->
+      <div class="product-gallery">
+        <div class="product-main-img" id="mainImg">🧴</div>
+        <div class="product-thumbs">
+          <div class="active" data-emoji="🧴">🧴</div>
+          <div data-emoji="✨">✨</div>
+          <div data-emoji="🌿">🌿</div>
+          <div data-emoji="💧">💧</div>
+        </div>
+      </div>
+
+      <!-- Infos -->
+      <div class="product-info">
+        <span class="badge">Best-seller</span>
+        <h1>Sérum éclat à la vitamine C</h1>
+
+        <div class="rating-row">
+          <span class="stars">★★★★<span class="empty">★</span></span>
+          <strong>4,6/5</strong>
+          <a href="#reviews">· 248 avis vérifiés</a>
+          <span class="skp-verified">Avis Vérifiés by Skeepers</span>
+        </div>
+
+        <div class="price-row">
+          <span class="price">29,90 €<span class="old">39,90 €</span></span>
+          <span class="badge" style="background:#eafaf1;color:var(--skp-green)">-25 %</span>
+        </div>
+
+        <p class="product-desc">Un sérum concentré qui ravive l'éclat du teint et lisse le grain
+          de peau. Formulé à 92 % d'ingrédients d'origine naturelle, sans parabène.</p>
+
+        <!-- Étapes du parcours d'achat -->
+        <div class="steps">
+          <div class="step current" data-n="1">Choix</div>
+          <div class="step" data-n="2">Panier</div>
+          <div class="step" data-n="3">Livraison</div>
+          <div class="step" data-n="4">Paiement</div>
+        </div>
+
+        <div class="option-group">
+          <label>Contenance</label>
+          <div class="swatches" data-group="size">
+            <div class="swatch active">30 ml</div>
+            <div class="swatch">50 ml</div>
+            <div class="swatch">100 ml</div>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label>Type de peau</label>
+          <div class="swatches" data-group="skin">
+            <div class="swatch active">Tous types</div>
+            <div class="swatch">Peau sèche</div>
+            <div class="swatch">Peau mixte</div>
+          </div>
+        </div>
+
+        <div class="hero-actions" style="margin-top:26px">
+          <a href="cart.html" class="btn btn-coral btn-lg">Ajouter au panier</a>
+          <button class="btn btn-ghost btn-lg" type="button">♡ Favoris</button>
+        </div>
+
+        <div class="trust-row" style="justify-content:flex-start;margin-top:22px">
+          <span>🚚 Livraison offerte dès 35 €</span>
+          <span>↩️ Retour sous 30 jours</span>
+          <span>🔒 Paiement sécurisé</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avis Skeepers -->
+    <section class="reviews" id="reviews">
+      <div class="section-head" style="text-align:left;margin-bottom:30px">
+        <p class="eyebrow">Avis Vérifiés by Skeepers</p>
+        <h2>Ce que disent nos clients</h2>
+      </div>
+
+      <div class="reviews-summary">
+        <div class="score-big">
+          <div class="num">4,6</div>
+          <div class="stars">★★★★<span class="empty">★</span></div>
+          <div style="font-size:.85rem;color:var(--skp-grey)">248 avis</div>
+        </div>
+        <div class="score-bars">
+          <div class="score-bar">5★ <div class="track"><div class="fill" style="width:72%"></div></div> 72%</div>
+          <div class="score-bar">4★ <div class="track"><div class="fill" style="width:18%"></div></div> 18%</div>
+          <div class="score-bar">3★ <div class="track"><div class="fill" style="width:6%"></div></div> 6%</div>
+          <div class="score-bar">2★ <div class="track"><div class="fill" style="width:3%"></div></div> 3%</div>
+          <div class="score-bar">1★ <div class="track"><div class="fill" style="width:1%"></div></div> 1%</div>
+        </div>
+      </div>
+
+      <div class="review-list">
+        <article class="review">
+          <div class="review-head">
+            <div class="review-author"><span class="avatar">CL</span> Camille L. <span class="skp-verified">Achat vérifié</span></div>
+            <span class="review-date">12 mai 2026</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Résultat visible en une semaine, le teint est vraiment plus lumineux. La texture
+             pénètre vite et ne colle pas. Je recommande !</p>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <div class="review-author"><span class="avatar">YM</span> Yann M. <span class="skp-verified">Achat vérifié</span></div>
+            <span class="review-date">3 mai 2026</span>
+          </div>
+          <div class="stars">★★★★<span class="empty">★</span></div>
+          <p>Très bon produit, odeur agréable. Je retire une étoile car le flacon pompe se vide
+             un peu vite. Sinon parfait.</p>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <div class="review-author"><span class="avatar">SB</span> Sophie B. <span class="skp-verified">Achat vérifié</span></div>
+            <span class="review-date">28 avril 2026</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>Ma peau est moins terne et plus douce. Livraison rapide et emballage soigné.
+             Je vais reprendre la version 50 ml.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">© <span id="year"></span> Démo Skeepers — Client Training. Contenu fictif à but pédagogique.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

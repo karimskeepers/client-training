@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panier — Skeepers Client Training</title>
+  <meta name="description" content="Page panier de démonstration aux couleurs de Skeepers." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="logo-mark"></span> keepers</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="purchase.html">Parcours d'achat</a></li>
+          <li><a href="help-center.html">Centre d'aide</a></li>
+          <li><a href="cart.html" class="active">Panier</a></li>
+        </ul>
+      </nav>
+      <a href="purchase.html" class="btn btn-ghost">← Continuer mes achats</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a> / <span>Mon panier</span>
+    </div>
+
+    <!-- Étapes -->
+    <div class="steps" style="max-width:620px">
+      <div class="step done" data-n="1">Choix</div>
+      <div class="step current" data-n="2">Panier</div>
+      <div class="step" data-n="3">Livraison</div>
+      <div class="step" data-n="4">Paiement</div>
+    </div>
+
+    <h1 style="margin:10px 0 4px">Mon panier</h1>
+    <p style="color:var(--skp-grey);margin-bottom:10px"><span id="cartCount">2</span> articles dans votre panier</p>
+
+    <div class="cart-layout">
+      <!-- Articles -->
+      <div class="cart-items" id="cartItems">
+        <div class="cart-item" data-price="29.90">
+          <div class="thumb">🧴</div>
+          <div>
+            <h3>Sérum éclat à la vitamine C</h3>
+            <div class="variant">30 ml · Tous types de peau</div>
+            <div class="item-rating stars">★★★★<span class="empty">★</span> <span style="color:var(--skp-grey)">4,6 · Avis Vérifiés</span></div>
+          </div>
+          <div class="item-right">
+            <div class="qty">
+              <button type="button" data-act="dec">−</button>
+              <span class="q">1</span>
+              <button type="button" data-act="inc">+</button>
+            </div>
+            <div class="item-price">29,90 €</div>
+            <button class="remove" type="button">Retirer</button>
+          </div>
+        </div>
+
+        <div class="cart-item" data-price="18.50">
+          <div class="thumb">🌿</div>
+          <div>
+            <h3>Crème hydratante apaisante</h3>
+            <div class="variant">50 ml · Peau sensible</div>
+            <div class="item-rating stars">★★★★★ <span style="color:var(--skp-grey)">4,8 · Avis Vérifiés</span></div>
+          </div>
+          <div class="item-right">
+            <div class="qty">
+              <button type="button" data-act="dec">−</button>
+              <span class="q">1</span>
+              <button type="button" data-act="inc">+</button>
+            </div>
+            <div class="item-price">18,50 €</div>
+            <button class="remove" type="button">Retirer</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Récapitulatif -->
+      <aside class="summary">
+        <h3>Récapitulatif</h3>
+        <div class="summary-row"><span>Sous-total</span><span id="subtotal">48,40 €</span></div>
+        <div class="summary-row"><span>Livraison</span><span id="shipping">Offerte</span></div>
+        <div class="summary-row"><span>Remise</span><span id="discount">– 0,00 €</span></div>
+
+        <div class="promo">
+          <input type="text" id="promoCode" placeholder="Code promo (ex : SKEEPERS10)" />
+          <button class="btn btn-primary" type="button" id="applyPromo">Appliquer</button>
+        </div>
+        <div id="promoMsg" style="font-size:.82rem;min-height:18px"></div>
+
+        <div class="summary-row total"><span>Total</span><span id="total">48,40 €</span></div>
+
+        <a href="#" class="btn btn-coral btn-block btn-lg" style="margin-top:14px">Passer la commande</a>
+
+        <div class="trust-row">
+          <span>🔒 Paiement sécurisé</span>
+          <span>↩️ Retour 30 j</span>
+          <span>⭐ Marchand noté 4,7/5</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">© <span id="year"></span> Démo Skeepers — Client Training. Contenu fictif à but pédagogique.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
