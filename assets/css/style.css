@@ -4,20 +4,28 @@
    =========================================================== */
 
 :root {
-  /* Couleurs de marque Skeepers */
-  --skp-purple: #6c2bd9;
-  --skp-purple-dark: #4c1d95;
-  --skp-purple-light: #a47aff;
-  --skp-violet-soft: #f3effe;
-  --skp-coral: #ff6b57;
-  --skp-coral-dark: #e2533f;
-  --skp-yellow: #ffc24b;
-  --skp-ink: #1c1530;
-  --skp-grey: #6b6580;
-  --skp-grey-light: #e7e3f1;
-  --skp-bg: #faf9fd;
+  /* Couleurs de marque Skeepers (extraites du logo officiel) */
+  --skp-blue: #0073ff;        /* bleu de marque (pictogramme) */
+  --skp-blue-dark: #005ad1;   /* hover / dégradés */
+  --skp-blue-light: #4d9bff;
+  --skp-blue-soft: #e8f1ff;   /* fond bleuté clair */
+  --skp-ink: #02020a;         /* quasi-noir du wordmark */
+  --skp-action: #02020a;      /* CTA fort (noir) */
+  --skp-action-dark: #23232e;
+  --skp-yellow: #ffc24b;      /* étoiles d'avis */
+  --skp-grey: #5f6675;
+  --skp-grey-light: #e3e7ef;
+  --skp-bg: #f8fafd;
   --skp-white: #ffffff;
   --skp-green: #2ecc71;
+
+  /* Alias rétro-compatibles (anciens noms utilisés dans le CSS) */
+  --skp-purple: var(--skp-blue);
+  --skp-purple-dark: var(--skp-blue-dark);
+  --skp-purple-light: var(--skp-blue-light);
+  --skp-violet-soft: var(--skp-blue-soft);
+  --skp-coral: var(--skp-action);
+  --skp-coral-dark: var(--skp-action-dark);
 
   --radius-sm: 8px;
   --radius: 14px;
@@ -78,15 +86,9 @@ img { max-width: 100%; display: block; }
   color: var(--skp-ink);
 }
 .brand:hover { text-decoration: none; }
-.brand .logo-mark {
-  width: 34px; height: 34px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--skp-purple), var(--skp-coral));
-  display: grid; place-items: center;
-  color: #fff; font-weight: 800;
-}
-.brand .logo-mark::after { content: "S"; }
-.brand .accent { color: var(--skp-purple); }
+.brand .brand-logo { height: 30px; width: auto; display: block; }
+.brand .brand-logo--light { filter: brightness(0) invert(1); }
+.brand .accent { color: var(--skp-blue); }
 
 .nav-links {
   display: flex;
@@ -151,8 +153,8 @@ img { max-width: 100%; display: block; }
 /* ---------- Hero ---------- */
 .hero {
   background:
-    radial-gradient(900px 400px at 80% -10%, rgba(255,107,87,.18), transparent),
-    linear-gradient(135deg, var(--skp-purple-dark), var(--skp-purple));
+    radial-gradient(900px 400px at 80% -10%, rgba(77,155,255,.45), transparent),
+    linear-gradient(135deg, #003a8c, var(--skp-blue));
   color: #fff;
   padding: 90px 0 110px;
   position: relative;
@@ -301,7 +303,7 @@ img { max-width: 100%; display: block; }
    Help Center (help-center.html)
    =========================================================== */
 .help-hero {
-  background: linear-gradient(135deg, var(--skp-purple-dark), var(--skp-purple));
+  background: linear-gradient(135deg, #003a8c, var(--skp-blue));
   color: #fff; padding: 60px 0;
 }
 .help-search {
