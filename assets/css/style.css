@@ -350,6 +350,15 @@ img { max-width: 100%; display: block; }
 }
 .feedback-box .btns { display: flex; gap: 12px; justify-content: center; margin-top: 14px; }
 
+/* Point de montage de la diffusion in-page Skeepers (cible : #mfb-inpage-survey) */
+.mfb-inpage { margin-top: 50px; min-height: 60px; }
+.mfb-inpage:empty::before {
+  content: "Zone de diffusion in-page Skeepers";
+  display: grid; place-items: center; min-height: 120px;
+  border: 2px dashed var(--skp-grey-light); border-radius: var(--radius);
+  color: var(--skp-grey); font-size: .85rem;
+}
+
 /* ===========================================================
    Panier (cart.html)
    =========================================================== */

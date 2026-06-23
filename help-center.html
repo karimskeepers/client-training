@@ -141,15 +141,10 @@
         <p>Il est probablement encore en modération. S'il n'apparaît pas après 7 jours,
           contactez le support.</p>
 
-        <div class="feedback-box">
-          <strong>Cet article vous a-t-il été utile ?</strong>
-          <div class="btns">
-            <button class="btn btn-ghost" type="button">👍 Oui</button>
-            <button class="btn btn-ghost" type="button">👎 Non</button>
-          </div>
-          <p style="margin-top:14px;font-size:.85rem;color:var(--skp-grey)">
-            Besoin de plus d'aide ? <a href="#">Contactez notre équipe support</a>.</p>
-        </div>
+        <!-- Point de montage de la diffusion in-page Skeepers MyFeelBack.
+             Dans la config de la diffusion, cible ce sélecteur : #mfb-inpage-survey
+             (méthode d'insertion conseillée : "append"). Remplace l'ancien encart de feedback. -->
+        <div id="mfb-inpage-survey" class="mfb-inpage" data-mfb-inpage></div>
       </article>
     </div>
   </div>
